@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <div class="game-mode">
+        <h3>Choose Game Mode</h3>
+        <button id="play-friend">Play with Friend</button>
+        <button id="play-ai">Play with AI</button>
+    </div>
+    <div class="turn-container" style="display: none;">
+        <h3>Turn For</h3>
+        <div class="turn-box" id="turn">X</div>
+    </div>
+    <div class="main-grid" style="display: none;">
+        <div class="box" data-index="0"></div>
+        <div class="box" data-index="1"></div>
+        <div class="box" data-index="2"></div>
+        <div class="box" data-index="3"></div>
+        <div class="box" data-index="4"></div>
+        <div class="box" data-index="5"></div>
+        <div class="box" data-index="6"></div>
+        <div class="box" data-index="7"></div>
+        <div class="box" data-index="8"></div>
+    </div>
+    <h2 id="results"></h2>
+    <button id="play-again" style="display: none;">Play Again</button>
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

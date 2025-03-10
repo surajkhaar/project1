@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+}
+
+.game-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.turn-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.turn-box {
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border: 2px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.box:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.box.win {
+    background-color: #a0ffa0;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    from { background-color: #a0ffa0; }
+    to { background-color: #8cff8c; }
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: green;
+}
+
+#play-again {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#play-again:hover {
+    background-color: #555;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
